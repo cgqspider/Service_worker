@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('../Service_worker/sw_cached_pages.js')
+      .register('https://cgqspider.github.io/Service_worker/sw_cached_pages.js')
       .then(reg => console.log('Service Worker: Registered (Pages)'))
       .catch(err => console.log(`Service Worker: Error: ${err}`));
   });
